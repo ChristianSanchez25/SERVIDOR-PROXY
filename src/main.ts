@@ -24,6 +24,7 @@ async function bootstrap() {
       },
     }),
   );
+  app.enableCors(); // habilita el cors
   await app.listen(process.env.PORT || 8080);
 }
 bootstrap();
